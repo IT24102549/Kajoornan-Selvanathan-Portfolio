@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom utilities */
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+}
+
+.glass-dark {
+  background: rgba(10,12,18,0.45);
+  backdrop-filter: blur(6px);
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  background: currentColor;
+  animation: blink 1s steps(2, start) infinite;
+  margin-left: 6px;
+}
+
+@keyframes blink {
+  to { visibility: hidden; }
+}
