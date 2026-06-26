@@ -2,34 +2,150 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Smooth scrolling */
+html, body, #root {
+  height: 100%;
+  background: #050816;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e2e8f0;
+  background: linear-gradient(135deg, #050816 0%, #0F172A 50%, #111827 100%);
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom utilities */
+::selection {
+  background: rgba(6, 182, 212, 0.3);
+  color: white;
+}
+
+/* Glass morphism */
 .glass {
-  background: rgba(255,255,255,0.04);
-  backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.12);
 }
 
 .glass-dark {
-  background: rgba(10,12,18,0.45);
-  backdrop-filter: blur(6px);
+  background: rgba(5, 8, 22, 0.5);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(6, 182, 212, 0.1);
 }
 
+/* Typing cursor animation */
 .typing-cursor {
   display: inline-block;
-  width: 2px;
-  background: currentColor;
+  width: 3px;
+  height: 1.2em;
+  background: #06b6d4;
   animation: blink 1s steps(2, start) infinite;
   margin-left: 6px;
+  vertical-align: middle;
 }
 
 @keyframes blink {
-  to { visibility: hidden; }
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
 }
+
+/* Section utilities */
+.section-header {
+  @apply text-cyan-400 text-sm font-semibold uppercase tracking-[0.25em] mb-4;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-black text-white mb-6;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent;
+}
+
+/* Premium button styles */
+.btn-primary {
+  @apply px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-full border border-cyan-500/50 text-cyan-400 font-semibold hover:bg-cyan-500/10 transition-all duration-300;
+}
+
+/* Cards */
+.card-dark {
+  @apply glass-dark rounded-2xl p-6 md:p-8 transition-all duration-300 hover:border-cyan-500/30;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(6, 182, 212, 0.6);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(4px, -8px, 0);
+  }
+}
+
+.hero-graph {
+  animation: float-slow 18s ease-in-out infinite;
+}
+
+.hero-graph-delay {
+  animation-delay: 4s;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
