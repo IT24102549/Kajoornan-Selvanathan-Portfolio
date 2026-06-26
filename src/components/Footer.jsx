@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa/index.esm.js'
 
 export default function Footer() {
   const socials = [

@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaAward, FaCertificate } from 'react-icons/fa'
+import { FaAward, FaCertificate } from 'react-icons/fa/index.esm.js'
 
 export default function Certificates() {
   const certificates = [

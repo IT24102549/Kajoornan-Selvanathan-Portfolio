@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaGraduationCap, FaAward } from 'react-icons/fa'
+import { FaGraduationCap, FaAward } from 'react-icons/fa/index.esm.js'
 
 export default function Education() {
   return (

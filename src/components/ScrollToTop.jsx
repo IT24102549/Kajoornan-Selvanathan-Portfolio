@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaArrowUp } from 'react-icons/fa'
+import { FaArrowUp } from 'react-icons/fa/index.esm.js'
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false)

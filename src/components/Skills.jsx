@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaJava, FaPython, FaReact, FaNode, FaDatabase, FaGit } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiTailwindcss, SiArduino } from 'react-icons/si'
+import { FaJava, FaPython, FaReact, FaNode, FaDatabase, FaGit } from 'react-icons/fa/index.esm.js'
+import { SiJavascript, SiTypescript, SiTailwindcss, SiArduino } from 'react-icons/si/index.esm.js'
 
 const SkillCard = ({ icon: Icon, name, level, color }) => (
   <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="card-dark">

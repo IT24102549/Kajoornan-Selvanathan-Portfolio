@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa/index.esm.js'
 
 const navItems = ['Home', 'About', 'Projects', 'Contact']
 const socialLinks = [

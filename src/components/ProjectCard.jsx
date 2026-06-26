@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa/index.esm.js'
 
 export default function ProjectCard({ title, desc, tech, image, link }) {
   return (

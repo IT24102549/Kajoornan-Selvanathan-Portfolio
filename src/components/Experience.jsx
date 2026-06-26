@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaBriefcase, FaUsers, FaTrophy } from 'react-icons/fa'
+import { FaBriefcase, FaUsers, FaTrophy } from 'react-icons/fa/index.esm.js'
 
 export default function Experience() {
   const experiences = [
