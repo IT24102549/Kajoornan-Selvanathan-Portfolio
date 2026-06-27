@@ -10,7 +10,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="relative py-24 md:py-32">
+    <section id="about" className="relative mt-[22vh] md:mt-[24vh] py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="mb-16 text-center">
           <p className="section-header">Journey</p>

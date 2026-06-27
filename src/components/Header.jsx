@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub } from 'react-icons/fa/index.esm.js'
+import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa/index.esm.js'
 
 const navItems = ['Home', 'About', 'Projects', 'Contact']
 const socialLinks = [
@@ -8,6 +8,11 @@ const socialLinks = [
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/kajoornan-selvanathan22',
     icon: FaLinkedin
+  },
+  {
+    label: 'WhatsApp',
+    href: 'https://wa.me/94753714090?text=Hi%20Kajoornan%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect.',
+    icon: FaWhatsapp
   },
   {
     label: 'GitHub',

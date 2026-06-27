@@ -1,11 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa/index.esm.js'
+import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaWhatsapp } from 'react-icons/fa/index.esm.js'
 
 export default function Footer() {
+  const whatsappNumber = '94753714090' // replace with your full WhatsApp number without + or spacing
+  const whatsappMessage = 'Hi%20Kajoornan%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect.'
   const socials = [
     { icon: FaLinkedin, link: 'https://www.linkedin.com/in/kajoornan-selvanathan22', label: 'LinkedIn' },
     { icon: FaGithub, link: 'https://github.com/IT24102549', label: 'GitHub' },
+    { icon: FaWhatsapp, link: `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, label: 'WhatsApp' },
     { icon: FaEnvelope, link: 'mailto:Kajoornan22@gmail.com', label: 'Email' }
   ]
 
