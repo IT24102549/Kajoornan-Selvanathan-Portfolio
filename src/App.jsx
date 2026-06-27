@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Header from './components/Header'
 import AnimatedBackground from './components/AnimatedBackground'
 import Hero from './components/Hero'
@@ -17,15 +17,10 @@ import { motion } from 'framer-motion'
 export default function App() {
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 800)
-    return () => clearTimeout(t)
-  }, [])
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#050816] via-[#0F172A] to-[#111827] text-white font-sans overflow-hidden">
       <AnimatedBackground />
-      {loading && <Loader />}
+      {loading && <Loader onComplete={() => setLoading(false)} />}
       <Header />
       <main className="relative z-10 pt-24">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeOut' }}>
