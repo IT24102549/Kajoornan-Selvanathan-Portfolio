@@ -70,11 +70,11 @@ export default function Loader({ onComplete }) {
           {/* Mobile */}
           <div className="sm:hidden">
             <h1 className="bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent font-black uppercase text-[2.2rem] tracking-[0.18em] leading-tight">
-              ONE LIFE
+              THE
             </h1>
 
             <h1 className="bg-gradient-to-r from-fuchsia-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent font-black uppercase text-[2.2rem] tracking-[0.18em] leading-tight">
-              EQUATION
+              JOURNEY
             </h1>
           </div>
 
@@ -89,7 +89,7 @@ export default function Loader({ onComplete }) {
               tracking-[0.28em]
             "
           >
-            ONE LIFE EQUATION
+            THE JOURNEY
           </h1>
         </motion.div>
 
